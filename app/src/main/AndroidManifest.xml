@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JetPackComposeStarting">
+        <activity android:name=".RecyclerviewActivity"/>
         <activity android:name=".LoginActivity"
             android:exported="true"
             android:label="@string/app_name"

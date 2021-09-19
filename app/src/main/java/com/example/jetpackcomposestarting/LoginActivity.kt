@@ -1,5 +1,6 @@
 package com.example.jetpackcomposestarting
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.ComponentActivity
@@ -35,9 +36,11 @@ class LoginActivity : ComponentActivity() {
 
     private fun loginUserNamePassword(userName: String, password: String) {
         if (userName == "HMH" && password == "1") {
-            Toast.makeText(this@LoginActivity, "Success", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this@LoginActivity,RecyclerviewActivity::class.java))
+            Toast.makeText(this@LoginActivity, "Success $userName  $password", Toast.LENGTH_SHORT).show()
         } else {
-            Toast.makeText(this@LoginActivity, "Failed", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this@LoginActivity,RecyclerviewActivity::class.java))
+            Toast.makeText(this@LoginActivity, "Failed  $userName  $password", Toast.LENGTH_SHORT).show()
         }
     }
 
