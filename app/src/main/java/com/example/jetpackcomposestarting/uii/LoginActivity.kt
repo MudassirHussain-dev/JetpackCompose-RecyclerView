@@ -1,4 +1,4 @@
-package com.example.jetpackcomposestarting
+package com.example.jetpackcomposestarting.uii
 
 import android.content.Intent
 import android.os.Bundle
@@ -36,10 +36,10 @@ class LoginActivity : ComponentActivity() {
 
     private fun loginUserNamePassword(userName: String, password: String) {
         if (userName == "HMH" && password == "1") {
-            startActivity(Intent(this@LoginActivity,RecyclerviewActivity::class.java))
+            startActivity(Intent(this@LoginActivity, RetrofitActivity::class.java))
             Toast.makeText(this@LoginActivity, "Success $userName  $password", Toast.LENGTH_SHORT).show()
         } else {
-            startActivity(Intent(this@LoginActivity,RecyclerviewActivity::class.java))
+            startActivity(Intent(this@LoginActivity, RetrofitActivity::class.java))
             Toast.makeText(this@LoginActivity, "Failed  $userName  $password", Toast.LENGTH_SHORT).show()
         }
     }

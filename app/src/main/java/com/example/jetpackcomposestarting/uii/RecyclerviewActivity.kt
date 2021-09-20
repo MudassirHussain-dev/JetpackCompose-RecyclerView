@@ -1,4 +1,4 @@
-package com.example.jetpackcomposestarting
+package com.example.jetpackcomposestarting.uii
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -20,11 +20,11 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
+import com.example.jetpackcomposestarting.R
+import com.example.jetpackcomposestarting.paractice.User
+import com.example.jetpackcomposestarting.paractice.dummyData
 import com.example.jetpackcomposestarting.ui.theme.JetPackComposeStartingTheme
-import com.example.jetpackcomposestarting.utils.User
-import com.example.jetpackcomposestarting.utils.dummyData
 
 class RecyclerviewActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

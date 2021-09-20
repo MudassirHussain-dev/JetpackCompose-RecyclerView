@@ -1,4 +1,4 @@
-package com.example.jetpackcomposestarting.utils
+package com.example.jetpackcomposestarting.paractice
 
 data class User(
     val description: String
